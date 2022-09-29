@@ -27,7 +27,7 @@ on:
 
 jobs:
   Run-Add-On:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, gpu]
     timeout-minutes: ${{ inputs.timeout }}
     steps:
       - name: ${{ github.event.client_payload.id }}
