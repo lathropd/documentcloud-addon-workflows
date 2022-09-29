@@ -32,6 +32,7 @@ jobs:
     steps:
       - name: ${{ github.event.client_payload.id }}
         run: echo run identifier ${{ github.event.client_payload.id }}
+        run: echo "GPU style"
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
