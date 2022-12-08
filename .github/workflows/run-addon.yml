@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       timeout:
-        default: 120
+        default: 360
         required: false
         type: number
       git-commit:
